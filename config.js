@@ -3,16 +3,16 @@ const { existsSync } = require('fs')
 if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || '',
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "2349067339193",
-    WORKTYPE: process.env.WORKTYPE || "private",
+    SESSION_ID: process.env.SESSION_ID || 'kord_ai-L7FgFRauBHkBbB1g',
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "254700282181",
+    WORKTYPE: process.env.WORKTYPE || "public",
     PREFIX: process.env.PREFIX || "[.]",
     ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || true,
     MONGODB_URI: process.env.MONGODB_URI || "",
     STATUS_VIEW: process.env.STATUS_VIEW || true,
     SAVE_STATUS: process.env.SAVE_STATUS || false,
     LIKE_STATUS: process.env.SAVE_STATUS || false,
-    STATUS_EMOJI: process.env.STATUS_EMOJI || "🥏",
+    STATUS_EMOJI: process.env.STATUS_EMOJI || "",
     ERROR_MSG: process.env.ERROR_MSG || true,
     TIMEZONE: process.env.TIMEZONE || "Africa/Lagos",
     CAPTION: process.env.CAPTION || "",
@@ -25,11 +25,11 @@ module.exports = {
     BOT_NAME: process.env.BOT_NAME || "Kord",
     RENDER_API_KEY: process.env.RENDER_API_KEY,
     ANTIDELETE: process.env.ANTIDELETE || "on",
-    ANTIDELETE_INCHAT: process.env.ANTIDELETE_INCHAT || "off",
-    ANTI_EDIT: process.env.ANTI_EDIT || "off",
-    ANTI_EDIT_IN_CHAT: process.env.ANTI_EDIT_IN_CHAT || "off",
+    ANTIDELETE_INCHAT: process.env.ANTIDELETE_INCHAT || "on",
+    ANTI_EDIT: process.env.ANTI_EDIT || "on",
+    ANTI_EDIT_IN_CHAT: process.env.ANTI_EDIT_IN_CHAT || "on",
     AUDIO_DATA: process.env.AUDIO_DATA || "Kord;🤍",
-    SUDO: process.env.SUDO || "", // example: 23412345667,2341234567
+    SUDO: process.env.SUDO || "254700282181", // example: 23412345667,2341234567
     MODS: process.env.MODS || "",
     REJECT_CALL: process.env.REJECT_CALL || "off",
     WARNCOUNT: process.env.WARNCOUNT || "4",
